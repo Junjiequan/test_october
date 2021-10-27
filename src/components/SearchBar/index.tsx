@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./SearchBarElements";
-import { ButtonSearch, ButtonRemove } from "../../utilities/Button";
+import { ButtonSearch, ButtonRemove } from "../../utilities/Buttons";
 import { IoSearchOutline } from "react-icons/io5";
 
 const SearchBar = () => {

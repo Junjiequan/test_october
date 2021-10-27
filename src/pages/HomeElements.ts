@@ -15,7 +15,6 @@ export const Header = styled.div`
   display: flex;
   width: 100%;
   height: fit-content;
-  border: 1px solid red;
   justify-content: space-between;
   @media ${DEVICE.sm} {
     flex-direction: column;

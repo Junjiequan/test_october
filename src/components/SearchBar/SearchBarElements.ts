@@ -10,6 +10,7 @@ export const Wrapper = styled.section`
 export const InputWrapper = styled.div`
   display: flex;
   width: 100%;
+  position: relative;
 `;
 
 export const Input = styled.input`

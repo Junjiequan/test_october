@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SPACE, COLORS, TRANSITION } from "./Constants";
+import { FaTimes } from "react-icons/fa";
 
 export const ButtonSearch = styled.button`
   display: flex;
@@ -17,6 +18,16 @@ export const ButtonSearch = styled.button`
   }
 `;
 
-export const ButtonRemove = styled.button`
-  display: flex;
+export const ButtonRemove = styled(FaTimes)`
+  display: ${(props: any) => (props["data-hide"] ? "flex" : "none")};
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.2rem;
+  opacity: 0.6;
+  height: 100%;
+  cursor: pointer;
+  transition: ${TRANSITION.ease};
+  &:hover {
+    opacity: 1;
+  }
 `;

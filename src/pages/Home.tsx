@@ -1,7 +1,12 @@
 import React from "react";
+import * as H from "./HomeElements";
 
 const Home = () => {
-  return <div></div>;
+  return (
+    <>
+      <H.Container>Yess</H.Container>
+    </>
+  );
 };
 
 export default Home;

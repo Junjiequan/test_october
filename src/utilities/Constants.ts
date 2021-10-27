@@ -1,13 +1,19 @@
 export const FONTS = {};
 
-export const COLORS = {};
+export const COLORS = {
+  white: `hsl(0,0%,100%)`,
+  black: `hsl(0,100%,0%)`,
+  lightGray: `hsl(0, 0%, 95%)`,
+  darkGray: `hsl(0, 0%, 87%)`,
+};
 
 export const WIDTH = {
   desktop: "111rem",
 };
 
 export const SPACE = {
-  container: "0 2rem",
+  container: "1rem 2rem",
+  button: "1.05rem 1.2rem",
 };
 
 export const TRANSITION = {

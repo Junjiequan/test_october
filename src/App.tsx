@@ -1,6 +1,5 @@
-import React from "react";
 import Home from "./pages/Home";
-import GlobalStyle from "./utilities/GlobslStyle";
+import GlobalStyle from "./utilities/GlobalStyle";
 
 const App = () => {
   return (

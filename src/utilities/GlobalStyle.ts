@@ -18,9 +18,12 @@ const GlobalStyle = createGlobalStyle`
         font-size:1.5rem;
         line-height: 2.2rem;
     }
+    input,
     button{
+        border:0;
         background:transparent;
     }
+
     li{
         list-style:none;
     }

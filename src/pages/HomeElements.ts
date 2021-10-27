@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { WIDTH, SPACE } from "../utilities/Constants";
+import { WIDTH, SPACE, DEVICE } from "../utilities/Constants";
 
 export const Container = styled.main`
   display: flex;
@@ -15,7 +15,11 @@ export const Header = styled.div`
   display: flex;
   width: 100%;
   height: fit-content;
+  border: 1px solid red;
   justify-content: space-between;
+  @media ${DEVICE.sm} {
+    flex-direction: column;
+  }
 `;
 
 export const Link = styled.a`

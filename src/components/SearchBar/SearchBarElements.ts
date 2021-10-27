@@ -1,11 +1,14 @@
 import styled from "styled-components";
-import { COLORS, SPACE } from "../../utilities/Constants";
+import { COLORS, SPACE, DEVICE } from "../../utilities/Constants";
 
 export const Wrapper = styled.section`
   display: flex;
   margin-right: 20rem;
   width: 45%;
   justify-content: space-between;
+  @media ${DEVICE.sm} {
+    width: 100%;
+  }
 `;
 export const InputWrapper = styled.div`
   display: flex;

@@ -20,7 +20,6 @@ export const Header = styled.div`
     flex-direction: column;
   }
 `;
-
 export const Link = styled.a`
   display: block;
   cursor: pointer;
@@ -29,3 +28,6 @@ export const Logo = styled.img`
   pointer-events: none;
   object-fit: contain;
 `;
+export const Main = styled.div``;
+export const VideoWrapper = styled.section``;
+export const SearchResultWrapper = styled.section``;

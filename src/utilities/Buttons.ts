@@ -13,6 +13,7 @@ export const ButtonSearch = styled.button`
   align-items: center;
   position: relative;
   transition: ${TRANSITION.ease};
+  transform: translateX(-1px);
   &:hover {
     background: ${COLORS.darkGray};
   }
@@ -21,6 +22,7 @@ export const ButtonSearch = styled.button`
 export const ButtonRemove = styled(FaTimes)`
   display: ${(props: any) => (props["data-hide"] ? "flex" : "none")};
   position: absolute;
+  z-index: 3;
   right: 1.5rem;
   bottom: 0.2rem;
   opacity: 0.6;

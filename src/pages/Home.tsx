@@ -1,5 +1,7 @@
 import * as H from "./HomeElements";
 import SearchBar from "../components/SearchBar";
+import FeaturedVideo from "../components/FeaturedVideo";
+import SearchResults from "../components/SearchResults";
 
 const Home = () => {
   const youtubeUrl = "https://www.youtube.com/";
@@ -14,6 +16,14 @@ const Home = () => {
           </H.Link>
           <SearchBar />
         </H.Header>
+        <H.Main>
+          <H.VideoWrapper>
+            <FeaturedVideo />
+          </H.VideoWrapper>
+          <H.SearchResultWrapper>
+            <SearchResults />
+          </H.SearchResultWrapper>
+        </H.Main>
       </H.Wrapper>
     </H.Container>
   );

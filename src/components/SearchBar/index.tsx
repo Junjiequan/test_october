@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import * as S from "./SearchBarElements";
 import { ButtonSearch, ButtonRemove } from "../../utilities/Buttons";
 import { IoSearchOutline } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { fetchData } from "../../actions";
 
 const SearchBar = () => {
+  const dispatch = useDispatch();
   const [search, setSearch] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.currentTarget.value);
@@ -14,8 +17,11 @@ const SearchBar = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const searchingText = e.currentTarget.search.value;
-    setSearch(searchingText);
-    setSearch("");
+    if (!!search) {
+      dispatch(fetchData(searchingText));
+      setSearch(searchingText);
+      setSearch("");
+    }
   };
 
   return (

@@ -8,6 +8,7 @@ export const Container = styled.main`
 `;
 export const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: ${WIDTH.desktop};
 `;
@@ -28,6 +29,15 @@ export const Logo = styled.img`
   pointer-events: none;
   object-fit: contain;
 `;
-export const Main = styled.div``;
-export const VideoWrapper = styled.section``;
-export const SearchResultWrapper = styled.section``;
+export const Main = styled.div`
+  display: flex;
+  margin-top: 2.5rem;
+  width: 100%;
+  min-height: 50rem;
+  justify-content: space-between;
+`;
+export const SearchResultWrapper = styled.section`
+  flex: 0 1 35rem;
+  height: fit-content;
+  border: 1px solid gray;
+`;

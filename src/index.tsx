@@ -5,11 +5,12 @@ import { HashRouter } from "react-router-dom";
 import { createStore } from "redux";
 import { allReducer } from "./reducers";
 import { Provider } from "react-redux";
+import thunk from "redux-thunk";
 
-const store = createStore(
-  allReducer,
-  (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__()
-);
+const composeEnhancer = (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+const store = createStore(allReducer, composeEnhancer(applyMiddleware(thunk)));
+
 export type AppDispatch = typeof store.dispatch;
 
 ReactDOM.render(

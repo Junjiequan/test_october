@@ -17,9 +17,7 @@ const Home = () => {
           <SearchBar />
         </H.Header>
         <H.Main>
-          <H.VideoWrapper>
-            <FeaturedVideo />
-          </H.VideoWrapper>
+          <FeaturedVideo embedId="xaazUgEKuVA" />
           <H.SearchResultWrapper>
             <SearchResults />
           </H.SearchResultWrapper>

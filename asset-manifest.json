@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/test_october/static/js/main.c7627920.chunk.js",
-    "main.js.map": "/test_october/static/js/main.c7627920.chunk.js.map",
+    "main.js": "/test_october/static/js/main.32e0965a.chunk.js",
+    "main.js.map": "/test_october/static/js/main.32e0965a.chunk.js.map",
     "runtime-main.js": "/test_october/static/js/runtime-main.a47fa100.js",
     "runtime-main.js.map": "/test_october/static/js/runtime-main.a47fa100.js.map",
-    "static/js/2.87ef2402.chunk.js": "/test_october/static/js/2.87ef2402.chunk.js",
-    "static/js/2.87ef2402.chunk.js.map": "/test_october/static/js/2.87ef2402.chunk.js.map",
+    "static/js/2.cba7bbac.chunk.js": "/test_october/static/js/2.cba7bbac.chunk.js",
+    "static/js/2.cba7bbac.chunk.js.map": "/test_october/static/js/2.cba7bbac.chunk.js.map",
     "index.html": "/test_october/index.html",
-    "static/js/2.87ef2402.chunk.js.LICENSE.txt": "/test_october/static/js/2.87ef2402.chunk.js.LICENSE.txt",
+    "static/js/2.cba7bbac.chunk.js.LICENSE.txt": "/test_october/static/js/2.cba7bbac.chunk.js.LICENSE.txt",
     "static/media/playIcon.439df107.png": "/test_october/static/media/playIcon.439df107.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a47fa100.js",
-    "static/js/2.87ef2402.chunk.js",
-    "static/js/main.c7627920.chunk.js"
+    "static/js/2.cba7bbac.chunk.js",
+    "static/js/main.32e0965a.chunk.js"
   ]
 }

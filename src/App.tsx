@@ -7,7 +7,7 @@ import { fetchData } from "./actions";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchData("never gonna give you up"));
+    dispatch(fetchData("never gonna give you up for 1 hour"));
   }, [dispatch]);
 
   return (

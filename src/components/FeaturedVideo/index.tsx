@@ -3,6 +3,7 @@ import * as F from "./FeaturedVideoElements";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../utilities/Types";
 import RelatedVideo from "./RelatedVideo";
+import IsLoading from "../../helpers/IsLoading";
 
 const FeaturedVideo = () => {
   const videoId = useSelector((state: RootState) => state.video);
@@ -20,7 +21,7 @@ const FeaturedVideo = () => {
           title="Embedded youtube"
         />
       </F.VideoWrapper>
-      {DATA && (
+      {DATA ? (
         <>
           <F.VideoInfo>
             <F.Title>{DATA[0].snippet.title}</F.Title>
@@ -37,6 +38,10 @@ const FeaturedVideo = () => {
           </F.VideoInfo>
           <RelatedVideo data-channelId={DATA[0].snippet.channelId} />
         </>
+      ) : (
+        <F.Error>
+          <IsLoading />
+        </F.Error>
       )}
     </F.Container>
   );

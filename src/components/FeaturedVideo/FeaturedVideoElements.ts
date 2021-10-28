@@ -76,12 +76,17 @@ export const DetailDesc = styled.p`
   }
 `;
 
+export const Error = styled.div`
+  margin-top: 5rem;
+`;
+
 //RelatedVideo
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   gap: 1rem;
   @media ${DEVICE.spec} {
     justify-content: flex-start;

@@ -5,7 +5,9 @@ import { TRANSITION } from "../../utilities/Constants";
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 0.5rem;
+  min-height: 40rem;
 `;
 
 //Snippet

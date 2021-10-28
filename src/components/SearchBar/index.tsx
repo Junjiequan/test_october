@@ -7,6 +7,7 @@ import { fetchData } from "../../actions";
 
 const SearchBar = () => {
   const dispatch = useDispatch();
+
   const [search, setSearch] = useState("");
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.currentTarget.value);

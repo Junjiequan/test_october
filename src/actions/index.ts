@@ -8,6 +8,7 @@ export const fetchData = (search: string) => async (dispatch: AppDispatch) => {
     dispatch({ type: "GET_DATA", payload: data });
   } catch (err: any) {
     console.log(err.message);
+    alert(`Youtube API daily limit exceeded: \n${err.message}`);
   }
 };
 

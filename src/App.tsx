@@ -9,6 +9,7 @@ const App = () => {
   useEffect(() => {
     dispatch(fetchData("never gonna give you up"));
   }, [dispatch]);
+
   return (
     <>
       <GlobalStyle />

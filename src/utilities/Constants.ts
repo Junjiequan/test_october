@@ -25,7 +25,8 @@ export const TRANSITION = {
 };
 
 export const DEVICE = {
-  sm: "screen and (max-width: 550px)",
+  sm: "screen and (max-width: 635px)",
   md: "screen and (max-width: 768px)",
   lg: "screen and (max-width: 1024px)",
+  spec: "screen and (max-width:900px)",
 };

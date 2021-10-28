@@ -35,6 +35,9 @@ export const Main = styled.div`
   width: 100%;
   min-height: 40rem;
   justify-content: space-between;
+  @media ${DEVICE.sm} {
+    flex-direction: column-reverse;
+  }
 `;
 export const SearchResultWrapper = styled.section`
   flex: 0 1 35rem;

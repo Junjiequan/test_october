@@ -1,3 +1,28 @@
+## Installation
+
+### Clone Repository
+
+```
+https://github.com/a331998513/test_october.git
+```
+
+### NPM
+
+```
+npm install
+```
+
+### Run app locally
+
+```
+npm run start
+```
+
+### Links
+
+- [Live](https://a331998513.github.io/test_october/#/)
+- [Code](https://github.com/a331998513/test_october)
+
 ## Requirements
 
 - At the top of application, the user can search for videos by entering a search term and hitting enter / return key.
@@ -6,3 +31,15 @@
 - User can click the play icon on the featured video to play the video.
 - Add a default search term to load videos and show the first video from the result as featured video
 - Use the YouTube API to show more videos from the same creator under featured video as recommendations.
+
+## Built with
+
+- CRA
+- styled-components
+- Redux-thunk
+- typescript
+- axios
+
+## Author
+
+- Jayyyyy

@@ -2,7 +2,7 @@ import React from "react";
 import { Item } from "../../utilities/Types";
 import * as S from "./SearchResultsElements";
 import { useDispatch } from "react-redux";
-import { getVideo } from "../../actions";
+import { getVideo, fetchData } from "../../actions";
 
 const Snippet = (props: Item) => {
   const dispatch = useDispatch();
@@ -10,10 +10,10 @@ const Snippet = (props: Item) => {
   const title = props.snippet.title;
   const author = props.snippet.channelTitle;
   const date: any = props.snippet.publishTime;
-  const videoId = props.id.videoId;
-  console.log(videoId);
+  const videoId = props.id.videoId ? props.id.videoId : "aDm5WZ3QiIE";
   const handleClick = () => {
     dispatch(getVideo(videoId));
+    dispatch(fetchData(title));
   };
 
   return (

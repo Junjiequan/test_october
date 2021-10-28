@@ -33,11 +33,10 @@ export const Main = styled.div`
   display: flex;
   margin-top: 2.5rem;
   width: 100%;
-  min-height: 50rem;
+  min-height: 40rem;
   justify-content: space-between;
 `;
 export const SearchResultWrapper = styled.section`
   flex: 0 1 35rem;
   height: fit-content;
-  border: 1px solid gray;
 `;

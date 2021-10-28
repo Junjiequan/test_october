@@ -1,20 +1,17 @@
 import React from "react";
 import * as F from "./FeaturedVideoElements";
+import { useSelector } from "react-redux";
+import type { RootState } from "../../utilities/Types";
 
-type TembedId = {
-  embedId: string;
-};
-
-const FeaturedVideo: React.FC<TembedId> = ({ embedId }) => {
+const FeaturedVideo = () => {
+  const videoId = useSelector((state: RootState) => state.video);
   return (
     <F.VideoWrapper>
       <iframe
         width="737"
         height="400"
-        data-autoplay="1"
-        src={`https://www.youtube.com/embed/${embedId}`}
+        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
         frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         title="Embedded youtube"
       />

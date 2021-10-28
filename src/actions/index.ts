@@ -10,3 +10,10 @@ export const fetchData = (search: string) => async (dispatch: AppDispatch) => {
     console.log(err.message);
   }
 };
+
+export const getVideo = (item: string) => {
+  return {
+    type: "GET_VIDEO",
+    payload: item,
+  };
+};
